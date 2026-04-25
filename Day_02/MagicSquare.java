@@ -46,6 +46,7 @@ public class MagicSquare {
             }
         }
         System.out.println("");
+
         for (int l = 0; l < n; l++) {
             for (int m = 0; m < n; m++) {
 
