@@ -14,6 +14,35 @@ public class TicTacToe {
         }
     }
 
+    // private static char checkWinningStatus(char[][] arr) {
+    //     char var;
+    //     if ((arr[0][0] == 'X') && (arr[0][1] == 'X') && (arr[0][2] == 'X')) {
+    //         var = 'X';
+    //     } else {
+    //         var = 'O';
+    //     }
+    //     if ((arr[1][0] == 'X') && (arr[1][1] == 'X') && (arr[1][2] == 'X')) {
+    //         var = 'X';
+    //     } else {
+    //         var = 'O';
+    //     }
+    //     if ((arr[2][0] == 'X') && (arr[2][1] == 'X') && (arr[2][2] == 'X')) {
+    //         var = 'X';
+    //     } else {
+    //         var = 'O';
+    //     }
+    //     if ((arr[0][0] == 'X') && (arr[1][0] == 'X') && (arr[2][0] == 'X')) {
+    //         var = 'X';
+    //     } else {
+    //         var = 'O';
+    //     }
+    //     if ((arr[0][0] == 'X') && (arr[1][0] == 'X') && (arr[2][0] == 'X')) {
+    //         var = 'X';
+    //     } else {
+    //         var = 'O';
+    //     }
+    //     return var;
+    // }
     private static void fieldstructure(char[][] arr) {
         System.out.print("-------------------------\n");
         System.out.println("|\t" + "|\t" + "|\t" + "|");
@@ -32,7 +61,6 @@ public class TicTacToe {
 
     public static void main(String[] args) {
         char[][] arr = new char[3][3];
-        int xWin = 0, oWin = 0;
         char move = 'X';
         boolean isWin = true;
         Scanner scanner = new Scanner(System.in);
@@ -40,7 +68,6 @@ public class TicTacToe {
 
         while (isWin) {
             System.out.println("----- Play Tic Tac Toe -----\n");
-            System.out.println("X Win:- " + xWin + "\tO Win:- " + oWin);
             System.out.println("");
             TicTacToe.fieldstructure(arr);
             System.out.print("Enter a slot number to place " + move + " in:- ");
