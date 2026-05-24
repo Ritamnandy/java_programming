@@ -104,6 +104,15 @@ Contains a console-based game project.
 
 - `TicTacToe.java` - two-player Tic-Tac-Toe with board display, turn handling, win checking, draw checking, and user input.
 
+## Clone Repository
+
+Clone this repository to your local machine:
+
+```bash
+git clone https://github.com/Ritamnandy/java_programming.git
+cd java_programming
+```
+
 ## How to Run
 
 Make sure the Java Development Kit is installed:
