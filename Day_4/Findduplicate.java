@@ -7,15 +7,25 @@ public class Findduplicate {
     public static void find(String str) {
         int count;
         for (int i = 0; i < str.length(); i++) {
-            count = 0;
-            for (int k = i + 1; k < str.length(); k++) {
-                if (str.charAt(i) == str.charAt(k)) {
+            boolean isrepeat = false;
+            for (int j = 0; j < i; j++) {
+                if (str.charAt(i) == str.charAt(j)) {
+                    isrepeat = true;
                     break;
-                } else {
-                    System.out.println(str.charAt(i) + " :- " + count);
 
                 }
-                //Better
+            }
+            if (isrepeat) {
+                continue;
+            }
+            count = 0;
+            for (int j = i; j < str.length(); j++) {
+                if (str.charAt(i) == str.charAt(j)) {
+                    count++;
+                }
+            }
+            if (count >= 0) {
+                System.out.println(str.charAt(i) + " is repeated " + count + " times");
             }
         }
     }
