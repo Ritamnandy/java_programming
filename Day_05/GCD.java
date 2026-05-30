@@ -20,7 +20,7 @@ public class GCD {
         int num2 = scanner.nextInt();
         int gcd = GCD.checkgcd(num1, num2);
         System.out.println("GCD of " + num1 + " and " + num2 + " is:- " + gcd);
-        System.out.println(36 % 60);
+        // System.out.println(36 % 60);
     }
 
 }
