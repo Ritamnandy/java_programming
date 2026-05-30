@@ -1,4 +1,5 @@
 
+// Program to Check Palindrome Number
 import java.util.Scanner;
 
 public class Palindrome {
