@@ -1,7 +1,8 @@
 
+//Program to Check Prime Number
+
 import java.util.Scanner;
 
-//Program to Check Prime Number
 public class Primenumber {
 
     public static void main(String[] args) {
