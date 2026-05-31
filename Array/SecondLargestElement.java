@@ -1,6 +1,6 @@
 //Second Largest Element in an Array
 
-import java.util.Scanner;
+import java.util.*;
 
 public class SecondLargestElement {
 
@@ -15,17 +15,17 @@ public class SecondLargestElement {
             int num = scanner.nextInt();
             arr[i] = num;
         }
-        //4 3 6 7
-        int max = 0;
-        int max2 = 0;
-        for (int i = 0; i < arr.length; i++) {
-            if (arr[i] >= max) {
-                max2 = max;
-                max = arr[i];
-            } 
-            
-        }
-        System.out.println("Second Largest Element is:- " + max2);
+        SecondLargestElement.scondlargest(arr);
 
+    }
+
+    private static void scondlargest(int[] arr) {
+        int len = arr.length;
+        if (len < 2) {
+            System.err.println("Array size should be greater than 2");
+        } else {
+            Arrays.sort(arr);
+            System.out.println("Second largest element is:- " + arr[len - 2]);
+        }
     }
 }
