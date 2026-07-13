@@ -19,20 +19,20 @@ class Calculate {
         switch (operator) {
             case '+' -> {
                 Result = num1 + num2;
-                System.out.println(num1 + " + " + num2 + " = " + Result);
+                System.out.println("Result:- " + num1 + " + " + num2 + " = " + Result);
 
             }
             case '-' -> {
                 Result = num1 - num2;
-                System.out.println(num1 + " - " + num2 + " = " + Result);
+                System.out.println("Result:- " + num1 + " - " + num2 + " = " + Result);
             }
             case '*' -> {
                 Result = num1 * num2;
-                System.out.println(num1 + " * " + num2 + " = " + Result);
+                System.out.println("Result:- " + num1 + " * " + num2 + " = " + Result);
             }
             case '/' -> {
                 Result = num1 / num2;
-                System.out.println(num1 + " / " + num2 + " = " + Result);
+                System.out.println("Result:- " + num1 + " / " + num2 + " = " + Result);
             }
             default -> {
 
@@ -58,7 +58,7 @@ public class Calculator extends Calculate {
         System.out.print("Enter second number:- ");
         float secondnum = scanner.nextFloat();
 
-        System.out.print("Enter operator:- ");
+        System.out.print("Enter operator(+,-,*,/):- ");
         char op = scanner.next().charAt(0);
 
         final Calculator obj = new Calculator(firstnum, secondnum, op);
