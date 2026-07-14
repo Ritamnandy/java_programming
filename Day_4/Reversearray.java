@@ -4,6 +4,7 @@ import java.util.Scanner;
 public class Reversearray {
 
     public static void reverse(int[] arr, int len) {
+        System.out.println("Reversed array is:-  ");
         for (int i = len - 1; i >= 0; i--) {
             System.out.print(arr[i] + " ");
         }

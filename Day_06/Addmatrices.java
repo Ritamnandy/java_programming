@@ -1,15 +1,14 @@
 
 import java.util.Scanner;
 
-//Add two same-size matrices
 public class Addmatrices {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Enter the size of matrices:- ");
-        System.out.println("Enter the numbers of rows :- ");
+        System.out.println("Enter the size of matrices:- ");
+        System.out.print("Enter the numbers of rows :- ");
         int row = scanner.nextInt();
-        System.out.println("Enter the numbers of columns :- ");
+        System.out.print("Enter the numbers of columns :- ");
         int col = scanner.nextInt();
         int matric1[][] = new int[row][col];
         int matric2[][] = new int[row][col];

@@ -18,7 +18,6 @@ public class Fibonacci {
 
     public static void main(String[] args) {
         final Scanner scanner = new Scanner(System.in);
-        System.out.println("print Fibonacci Numbers from 1 to n");
         System.out.print("Enter a number(n):- ");
         int num = scanner.nextInt();
         System.out.print("Fibonacci Numbers from 1 to " + num + " :- ");
