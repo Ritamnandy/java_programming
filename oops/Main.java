@@ -1,54 +1,66 @@
 
-class Animal {
+import java.util.Scanner;
 
-    public void animalSound() {
-        System.out.println("The animal makes a sound");
+class Student {
+
+    int roll;
+    String name;
+
+    void getStudentData(int r, String n) {
+        roll = r;
+        name = n;
+    }
+
+    void displayStudent() {
+        System.out.println("Roll No:- " + roll);
+        System.out.println("Name:-  " + name);
+    }
+}
+class Exam extends Student {
+
+    int marks;
+
+    void getMarks(int m) {
+        marks = m;
+    }
+
+    void displayMarks() {
+        System.out.println("Marks:- " + marks);
     }
 }
 
-class Dog extends Animal {
+class Result extends Exam {
 
-    @Override
-    public void animalSound() {
-        System.out.println("The dog barks");
-    }
-}
-
-class Cat extends Animal {
-
-    @Override
-    public void animalSound() {
-        System.out.println("The cat meows");
-    }
-}
-
-class Cow extends Animal {
-
-    @Override
-    public void animalSound() {
-        System.out.println("The cow moos");
+    void displayResult() {
+        if (marks >= 40) {
+            System.out.println("Result  : Pass");
+        } else {
+            System.out.println("Result  : Fail");
+        }
     }
 }
 
 public class Main {
 
     public static void main(String[] args) {
-        // Animal myAnimal = new Animal();
-        // Animal myDog = new Dog();
-        // Animal myCat = new Cat();
-        // Animal myCow = new Cow();
-        // myAnimal.animalSound();
-        // myDog.animalSound();
-        // myCat.animalSound();
-        // myCow.animalSound();
-        Animal myAnimal;
-        myAnimal = new Animal();
-        myAnimal.animalSound();
-        myAnimal = new Dog();
-        myAnimal.animalSound();
-        myAnimal = new Cat();
-        myAnimal.animalSound();
-        myAnimal = new Cow();
-        myAnimal.animalSound();
+
+        Scanner sc = new Scanner(System.in);
+
+        Result obj = new Result();
+
+        System.out.print("Enter Roll No:- ");
+        int roll = sc.nextInt();
+        sc.nextLine();
+        System.out.print("Enter Name:- ");
+        String name = sc.nextLine();
+
+        System.out.print("Enter Marks:- ");
+        int marks = sc.nextInt();
+        obj.getStudentData(roll, name);
+        obj.getMarks(marks);
+        System.out.println("\n----- Student Details -----");
+        obj.displayStudent();
+        obj.displayMarks();
+        obj.displayResult();
     }
 }
