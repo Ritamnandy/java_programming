@@ -13,14 +13,12 @@ public class Armstrong {
 
     private static void checkarmstrong(int num) {
         int noOfDigit = checkdigit(num);
-        System.out.println("No of digit:- " + noOfDigit);
         int original = num;
         int sum = 0;
         while (num != 0) {
             int ren = num % 10;
             sum += Math.pow(ren, noOfDigit);
             num /= 10;
-            System.out.println("Sum:- " + sum);
         }
         if (sum == original) {
             System.out.println(original + " is an Armstrong number");

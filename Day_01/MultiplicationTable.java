@@ -13,7 +13,6 @@ public class MultiplicationTable {
     public static void main(String[] args) {
 
         final Scanner scanner = new Scanner(System.in);
-        System.out.println("Multiplication Table......");
         System.out.print("Input a number:- ");
         boolean isnum = scanner.hasNextInt();
         if (isnum) {

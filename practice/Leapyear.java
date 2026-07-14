@@ -15,7 +15,6 @@ public class Leapyear {
 
     public static void main(String[] args) {
         final Scanner scanner = new Scanner(System.in);
-        System.out.println("Check if a Given Year Is a Leap Year or Not");
         System.out.print("Enter the year:- ");
         int year = scanner.nextInt();
         Leapyear.Checkleapyear(year);
